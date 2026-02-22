@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DominicaAddressAPI.csproj" />
+  <Project Path="Tests/DominicaAddressAPI.Tests.csproj" />
+</Solution>

@@ -1,0 +1,57 @@
+@DominicaAddressAPI_HostAddress = http://localhost:5038
+
+### Get all parishes
+GET {{DominicaAddressAPI_HostAddress}}/api/parishes
+Accept: application/json
+
+### Get parish by ID (St. George)
+GET {{DominicaAddressAPI_HostAddress}}/api/parishes/1
+Accept: application/json
+
+### Get settlements in a parish
+GET {{DominicaAddressAPI_HostAddress}}/api/parishes/1/settlements
+Accept: application/json
+
+### Get streets in a parish
+GET {{DominicaAddressAPI_HostAddress}}/api/parishes/1/streets
+Accept: application/json
+
+### Get all settlements
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements
+Accept: application/json
+
+### Get only cities
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements?type=City
+Accept: application/json
+
+### Get only towns
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements?type=Town
+Accept: application/json
+
+### Get only villages
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements?type=Village
+Accept: application/json
+
+### Get settlement by ID (Roseau)
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements/1
+Accept: application/json
+
+### Get streets in a settlement
+GET {{DominicaAddressAPI_HostAddress}}/api/settlements/1/streets
+Accept: application/json
+
+### Get all streets
+GET {{DominicaAddressAPI_HostAddress}}/api/streets
+Accept: application/json
+
+### Get street by ID
+GET {{DominicaAddressAPI_HostAddress}}/api/streets/1
+Accept: application/json
+
+### Search for "roseau"
+GET {{DominicaAddressAPI_HostAddress}}/api/search?q=roseau
+Accept: application/json
+
+### Search for "independence"
+GET {{DominicaAddressAPI_HostAddress}}/api/search?q=independence
+Accept: application/json
